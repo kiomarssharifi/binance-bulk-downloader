@@ -350,7 +350,7 @@ class BinanceBulkDownloader:
                     )
 
             # Don't download if already exists
-            if os.path.exists(csv_destination_path) or os.path.exists(csv_destination_path + ".zst")::
+            if os.path.exists(csv_destination_path) or os.path.exists(csv_destination_path + ".zst"):
                 return
                 
             url = f"{self._BINANCE_DATA_DOWNLOAD_BASE_URL}/{prefix}"
